@@ -1,0 +1,149 @@
+//-----------------------------------------------------------------//
+//---------------------------- BUTTONS ----------------------------//
+//-----------------------------------------------------------------//
+
+// BTN
+.btn {
+  display: inline-block;
+
+  position: relative;
+
+  background-image: linear-gradient(
+    to bottom,
+    $primary-color,
+    $primary-color-dark
+  );
+
+  height: max-content;
+  padding: 0.5em 2.5em;
+  margin: 1rem;
+
+  border: none;
+  border-radius: 0.25em;
+
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    left: -2.5%;
+
+    width: 105%;
+    height: 100%;
+
+    border-radius: 0.25em;
+    border: 2px solid $primary-color;
+
+    transition: transform 0.25s ease-in-out, width 0.25s ease-in-out;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+      transform: translate(2.5%, -10%);
+    }
+  }
+}
+
+// BTN WITH ICON (+ .btn)
+.btn-icon {
+  height: max-content;
+  padding: 0.5em 0.75em;
+
+  i {
+    margin-left: 0.5em;
+  }
+}
+
+// BTN ARROW
+.btn-arrow {
+  cursor: pointer;
+  background: transparent;
+  height: max-content;
+  margin: 1rem;
+  border: none;
+
+  transition: opacity 0.25s ease-in-out;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+//-----------------------------------------------------------------//
+//----------------------------- CARD ------------------------------//
+//-----------------------------------------------------------------//
+
+// IMG CARD
+.img-card {
+  overflow: hidden;
+
+  min-width: 250px;
+  width: 20%;
+  height: max-content;
+
+  border-radius: 2rem;
+  box-shadow: 5px 5px 5px rgba($black, 0.25);
+
+  .img-box {
+    width: 100%;
+    height: 12vw;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .text-box {
+    background-image: linear-gradient(
+      to bottom,
+      $primary-color,
+      $primary-color-dark
+    );
+
+    padding: 1.75em 0;
+
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+// TESTIMONIAL CARD
+.testimonial-card {
+  display: flex;
+  align-items: center;
+
+  background-color: $primary-color-light;
+
+  min-width: 350px;
+  width: 35%;
+  height: max-content;
+  padding: 1.5rem;
+
+  .img-box {
+    min-width: 5vw;
+    width: 5vw;
+    min-height: 5vw;
+    height: 5vw;
+    margin-right: 1.5rem;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .stars {
+    margin: 0.25rem 0;
+    i {
+      color: rgb(255, 208, 0);
+    }
+  }
+}
