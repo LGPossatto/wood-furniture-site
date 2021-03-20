@@ -1,0 +1,23 @@
+.carrousel {
+  position: relative;
+
+  margin-top: 7.5rem;
+
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1rem;
+    line-height: 1.25em;
+  }
+
+  &__box {
+    overflow: auto;
+
+    width: 100%;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+
+    border: 5px solid $primary-color-details;
+    border-radius: 2rem;
+  }
+}

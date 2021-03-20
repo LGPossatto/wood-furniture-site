@@ -1,0 +1,61 @@
+.pannel {
+  position: relative;
+
+  margin-top: 7.5rem;
+
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1rem;
+    line-height: 1.25em;
+  }
+
+  .img-box {
+    position: relative;
+
+    width: 100vw;
+    height: 25vw;
+    max-height: 750px;
+    margin-top: 2rem;
+
+    border-top: 5px solid $primary-color;
+    border-bottom: 5px solid $primary-color;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      max-height: 100%;
+    }
+
+    a {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
+  }
+
+  .circle-big-svg {
+    top: -50px;
+    right: 0;
+  }
+
+  .shape-svg {
+    width: 30vw;
+    height: 30vw;
+
+    top: -50%;
+    left: -15%;
+  }
+
+  .squares-svg {
+    top: -20%;
+    left: 5%;
+  }
+
+  @include bp-tablet {
+    .img-box {
+      height: 50vw;
+    }
+  }
+}

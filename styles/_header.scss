@@ -16,9 +16,9 @@
     .img-box {
       position: relative;
 
-      max-width: 1024px;
+      max-width: 1366px;
       width: 80vw;
-      max-height: 450px;
+      max-height: 585px;
       height: 45vw;
 
       img {
@@ -44,19 +44,6 @@
         width: 125%;
         height: 90%;
       }
-    }
-  }
-
-  svg {
-    position: absolute;
-    z-index: -1;
-
-    path {
-      fill: rgba($primary-color-details, 0.35);
-    }
-
-    circle {
-      fill: $primary-color-details;
     }
   }
 

@@ -24,6 +24,7 @@ html {
 
 body {
   background-color: $primary-color-light;
+  padding-bottom: 10rem;
 }
 
 a {
@@ -226,5 +227,26 @@ li {
 
   &-primary {
     color: $primary-color;
+  }
+}
+
+//-----------------------------------------------------------------//
+//------------------------------ SVG ------------------------------//
+//-----------------------------------------------------------------//
+
+svg {
+  position: absolute;
+  z-index: -1;
+
+  path {
+    fill: rgba($primary-color-details, 0.35);
+  }
+
+  circle {
+    fill: $primary-color-details;
+  }
+
+  .rect-sp {
+    fill: $primary-color-dark;
   }
 }
