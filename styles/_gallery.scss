@@ -1,0 +1,49 @@
+.gallery {
+  position: relative;
+
+  margin-top: 7.5rem;
+
+  text-align: center;
+
+  &__box {
+    margin-top: 2rem;
+
+    a {
+      width: 100%;
+      max-height: 450px;
+
+      transition: opacity 0.25s ease-in-out;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        min-height: 100%;
+
+        border-radius: 2rem;
+        box-shadow: 5px 5px 5px rgba($black, 0.25);
+      }
+
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+
+    @include bp-tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include bp-mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .circle-big-svg-l {
+    top: 75%;
+    left: 0;
+  }
+
+  .circle-big-svg-r {
+    top: -5%;
+    right: 0;
+  }
+}
